@@ -1,0 +1,18 @@
+IS-A relationship is completely inheritance. This means, that the child class is a type of parent class. For example, 
+an apple is a fruit. So you will extend fruit to get apple.
+
+class Apple extends Fruit {
+
+}
+On the other hand, composition means creating instances which have references to other objects. For example, 
+a room has a table. So you will create a class room and then in that class create an instance of type table.
+
+class Room {
+
+    Table table = new Table();
+
+}
+A HAS-A relationship is dynamic (run time) binding while inheritance is a static (compile time) binding. 
+If you just want to reuse the code and you know that the two are not of same kind use composition. For example,
+ you cannot inherit an oven from a kitchen. A kitchen HAS-A oven. When you feel there is a natural relationship like Apple 
+is a Fruit use inheritance.
