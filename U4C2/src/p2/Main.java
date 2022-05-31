@@ -19,6 +19,7 @@ public class Main {
 			System.out.println("Roll number "+arr[i].getRoll());
 			System.out.println("Address "+arr[i].getAddress());
 			System.out.println("Marks "+arr[i].getMarks());
+			
 			System.out.println("-----------------");
 		}
 		Student s = new Student();

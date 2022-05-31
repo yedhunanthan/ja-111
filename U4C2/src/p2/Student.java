@@ -18,6 +18,7 @@ public class Student {
 			System.out.println("Enter Address");
 			address = scan.next();
 			System.out.println("Enter Marks");
+			
 			marks = scan.nextInt();
 	}
 	public int avg(int x,Student arr[]) {
