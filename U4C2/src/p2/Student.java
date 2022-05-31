@@ -9,9 +9,7 @@ public class Student {
 	private String address;
 	private int marks;
 	
-	public void setStudent (int x) {
-		Object[] stu = new Object[x];
-		for(int i=0;i<x;i++) {
+	public void setStudent () {
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Enter Name");
 			name = scan.next();
@@ -21,17 +19,14 @@ public class Student {
 			address = scan.next();
 			System.out.println("Enter Marks");
 			marks = scan.nextInt();
-			Object[] y= {name,roll,address,marks};
-			stu[i]= y;
-		}	
+	}
+	public int avg(int x,Student arr[]) {
+		int sum =0;
 		for(int i=0;i<x;i++) {
-			Object o1 = stu[i];
-			
-			System.out.println("Enter Name"+o1[i]);
-			System.out.println("Enter Roll Number");
-			System.out.println("Enter Address");
-			System.out.println("Enter Marks");
+			sum += arr[i].getMarks();
 		}
+		sum /=x;
+		return sum;
 	}
 	public int getRoll() {
 		return roll;
